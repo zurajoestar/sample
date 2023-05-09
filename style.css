@@ -1,0 +1,145 @@
+/* Reset default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Set a background color for the header */
+header {
+  background-color: #dedad9;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Style the logo */
+.logo img {
+  max-height: 100px;
+  margin-left: 20px;
+}
+
+/* Move the navigation to the right side */
+nav {
+  margin-left: auto;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav li {
+  margin-right: 5px;
+}
+
+nav a {
+  font-size: 30px;
+  padding: 0 20px;
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Style the dropdown and button */
+.dropdown {
+  text-align: center;
+  margin-top: 100px;
+  color: #dedad9;
+}
+
+.dropdown select {
+  font-size: 25px;
+  padding: 8px;
+  border: 1px solid pink;
+  border-radius: 4px;
+  background-color: #fff;
+  color: #555;
+  margin-right: 10px;
+}
+
+.dropdown button {
+  font-size: 25px;
+  padding: 8px;
+  border: none;
+  border-radius: 4px;
+  background-color: #dedad9;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Style the selected option text */
+#selectedOptionText {
+  text-align: center;
+  font-size: 24px;
+  margin-top: 20px;
+}
+
+/********** FONTS ***********/
+body {
+  font-family: Arial, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: Georgia, serif;
+}
+
+.dropdown, .dropdown select, .dropdown button {
+  font-family: Verdana, sans-serif;
+}
+
+
+/********** Future locations ***********/
+.locations-container {
+  font-size: 24px;
+  width: 25%;
+  margin: 0 auto;
+  margin-top: 100px;
+  background-color: none;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.location {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  padding: 5px;
+}
+
+.location-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+.location-list li {
+  margin: 10px;
+  font-size: 32px;
+  font-weight: bold;
+  color: #333333;
+}
+
+/********** About Us ***********/
+.text-container {
+  max-width: 70%;
+  margin: 0 auto;
+  margin-top: 100px;
+  padding: 20px;
+  background-color: #b8b3b2;
+  border-radius: 10px;
+}
+
+.text-container h2 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.text-container p {
+  font-size: 20px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
