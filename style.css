@@ -149,3 +149,24 @@ footer {
   line-height: 1.5;
   margin-bottom: 20px;
 }
+
+.nav-tabs .nav-link.active {
+    background-color: red;
+    color: white;
+    border: 3px solid;
+}
+
+.nav-tabs .nav-link {
+    background-color: grey;
+    color: white;
+    border: 3px solid;
+    font-size: 20px;
+    border-bottom: 15px;
+    padding-bottom: 5px;
+    margin-bottom: 2px;
+
+}
+.nav-tabs .nav-link:hover {
+    background-color: green;
+
+}
