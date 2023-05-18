@@ -168,5 +168,13 @@ footer {
 }
 .nav-tabs .nav-link:hover {
     background-color: green;
-
 }
+
+
+/**** Future Lot Page ****/
+
+.station {
+    padding-left: 25rem;
+}
+
+
