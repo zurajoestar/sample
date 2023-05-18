@@ -1,30 +1,123 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Sample</title>
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="style.css">
-  </head>
-  <body>
-    <header>
-      <div class="logo">
+
+    <title>Future Locations</title>
+</head>
+<body>
+<header>
+    <div class="logo">
         <img src="logo.png" alt="Logo">
-      </div>
-      <nav>
+    </div>
+    <nav>
         <ul>
-          <li><a href="sample.html">Home</a></li>
-          <li><a href="futureloc.html" class="active">Future Locations</a></li>
-          <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="sample.html">Home</a></li>
+            <li><a href="futureloc.html" class="active">Future Locations</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
         </ul>
-      </nav>
-    </header>
+    </nav>
+</header>
+<h1>Future Locations</h1>
+<p>This page contains the list of possible parking lots supported in the future.</p>
 
+<nav>
+    <div class="nav nav-tabs nav-justified" id="nav-tab" role="tablist">
+        <button class="nav-link active" id="nav-red-tab" data-bs-toggle="tab" data-bs-target="#nav-red" type="button"
+                role="tab" aria-controls="nav-home" aria-selected="true">
+            Red Line
+        </button>
+        <button class="nav-link" id="nav-lot2-tab" data-bs-toggle="tab" data-bs-target="#nav-blue" type="button"
+                role="tab" aria-controls="nav-blue-tab" aria-selected="true">
+            Blue Line
+        </button>
+        <button class="nav-link" id="nav-lot3-tab" data-bs-toggle="tab" data-bs-target="#nav-bus" type="button"
+                role="tab" aria-controls="nav-bus-tab" aria-selected="true">
+            Bus Terminals
+        </button>
+    </div>
+</nav>
 
-    <main>
+<div class="tab-content" id="nav-tabContent">
+    <div class="tab-pane fade show active" id="nav-red" role="tabpanel" aria-labelledby="nav-red-tab">
+        <div class="row">
+            <div class="col">
+                <ul>
+                    <h1>South</h1>
+                    <li>39 Avenue</li>
+                    <li>Anderson</li>
+                    <li>Canyon Meadows</li>
+                    <li>Chinook</li>
+                    <li>Fish Creek-Lacombe</li>
+                    <li>Heritage</li>
+                    <li>Shawnessy</li>
+                    <li>Somerset-Bridlewood</li>
+                    <li>Southland</li>
+                    <h1>North</h1>
+                    <li>Brentwood</li>
+                    <li>Tuscany</li>
+                    <li>Dalhousie</li>
+                </ul>
+            </div>
+            <div class="col-auto">
+                <img src="red.png" alt="red">
+            </div>
+        </div>
+    </div>
+    <div class="tab-pane fade" id="nav-blue" role="tabpanel" aria-labelledby="nav-blue-tab">
+        <div class="row">
+            <div class="col">
+                <ul>
+                    <h1>NE</h1>
+                    <li>Marlborough Mall (MaKami College)</li>
+                    <li>Rundle (Sunridge Mall)</li>
+                    <li>Franklin - North and South</li>
+                    <li>Marlborough (Canadian Tire Mall)</li>
+                    <li>McKnight - Westwinds</li>
+                    <li>Saddletowne</li>
 
-    </main>
-    <script src="script.js"></script>
-  </body>
-  <footer>
-    <p>All rights reserved.</p>
-  </footer>
+                    <h1>West</h1>
+                    <li>69 Street Parkade</li>
+                    <li>69 Street Surface</li>
+                    <li>Sirocco Station</li>
+                </ul>
+            </div>
+            <div class="col-auto">
+                <img src="blue.png" alt="blue">
+            </div>
+        </div>
+
+    </div>
+    <div class="tab-pane fade" id="nav-bus" role="tabpanel" aria-labelledby="nav-bus-tab">
+        <div class="row">
+            <div class="col">
+                <ul>
+                    <h1>Locations</h1>
+                    <li>Centre St & 36 Ave N</li>
+                    <li>Centre St & 78 Ave N (Huntington Hills Community College</li>
+                    <li>Douglas Glen</li>
+                    <li>McKenzie Towne</li>
+                    <li>North Pointe (Harvest Hills Blvd at Country Village Way</li>
+                    <li>Sandstone Dr & Berkshire Blvd NW</li>
+                </ul>
+            </div>
+            <div class="col-auto">
+                <img src="blue.png" alt="blue">
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Option 1: Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+</body>
 </html>
