@@ -7,7 +7,9 @@
 <body>
 <header>
       <div class="logo">
-        <img src="img/logo.png" alt="Logo">
+        <a href="sample.html">
+          <img src="img/logo.png" alt="Logo">
+        </a>
       </div>
       <nav>
         <ul>
@@ -18,13 +20,13 @@
       </nav>
     </header>
 
-<p>Saved option is:</p>
+<p>Chosen location is:</p>
 <p id="demo"></p>
+<p>This mini demo is to check if the user input (dropdown choice) could be passed to another page.</p>
 
 </body>
 <script src="script.js"></script>
 <script>
-    // Retrieve
-    document.getElementById("demo").innerHTML = sessionStorage.getItem("lastname");
+    document.getElementById("demo").innerHTML = sessionStorage.getItem("lastname"); // retrieve from session storage
 </script>
 </html>

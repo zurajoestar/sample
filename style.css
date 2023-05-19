@@ -5,7 +5,22 @@
   box-sizing: border-box;
 }
 
-/* background color for the header */
+
+/************************************** fonts **************************************/
+body {
+  font-family: Verdana, sans-serif;
+  background-color: papayawhip;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: Georgia, serif;
+}
+
+.dropdown, .dropdown select, .dropdown button {
+  font-family: Verdana, sans-serif;
+}
+
+/************************************** header **************************************/
 header {
   background-color: #000;
   padding: 10px;
@@ -14,13 +29,14 @@ header {
   align-items: center;
 }
 
-/* Style the logo */
+/************************************** logo **************************************/
 .logo img {
   max-height: 100px;
   margin-left: 20px;
 }
 
-/* Navigation links */
+
+/************************************** navigation links **************************************/
 nav {
   margin-left: auto;
 }
@@ -45,21 +61,26 @@ nav a.active /* for highlighting the current nav header */ {
   color: red;
 }
 
-/* Style the dropdown and button */
+/************************************** dropdown **************************************/
 .dropdown {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
   margin-top: 100px;
   color: #000;
+  width: 500px;
 }
 
+
 .dropdown select {
-  font-size: 25px;
+  font-size: 15px;
   padding: 8px;
   border: 1px solid black;
   border-radius: 4px;
   background-color: #fff;
   color: #555;
   margin-right: 10px;
+  width: 100%;
 }
 
 .dropdown button {
@@ -72,28 +93,8 @@ nav a.active /* for highlighting the current nav header */ {
   cursor: pointer;
 }
 
-/******* for "option X is selected" text style ******/
-#selectedOptionText {
-  text-align: center;
-  font-size: 24px;
-  margin-top: 20px;
-}
 
-/********** fonts ***********/
-body {
-  font-family: Verdana, sans-serif;
-  background-color: papayawhip;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: Georgia, serif;
-}
-
-.dropdown, .dropdown select, .dropdown button {
-  font-family: Verdana, sans-serif;
-}
-
-/********** slideshow ***********/
+/************************************** slideshow **************************************/
 .mySlides {
   filter: brightness(80%) saturate(120%) hue-rotate(-20deg) sepia(30%) blur(1px);
   width: 100%;
@@ -112,9 +113,10 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-/********** footer ***********/
+
+/************************************** footer **************************************/
 main {
-  margin-bottom: 200px;
+  margin-bottom: 200px; /* fixed space between main content and footer */
 }
 
 footer {
@@ -128,8 +130,7 @@ footer {
   text-align: center;
 }
 
-
-/********** About Us ***********/
+/************************************** About Us **************************************/
 .text-container {
   max-width: 70%;
   margin: 0 auto;
@@ -172,7 +173,7 @@ footer {
 }
 
 
-/**** Future Lot Page ****/
+/************************************** Future Lot Page **************************************/
 
 .station {
     padding-left: 25rem;

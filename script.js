@@ -1,6 +1,7 @@
 var slideIndex = 0;
 carousel();
 
+// carousel / slideshow
 function carousel() {
   var i;
   var x = document.getElementsByClassName("mySlides");
@@ -13,11 +14,9 @@ function carousel() {
   setTimeout(carousel, 2000); // Change image every 2 seconds
 }
 
+// for passing selected option to another page
 function displaySelectedOption() {
-  location.href = "db.html";
-   // Set Item
-    var selectedOption = document.getElementById("options").value;
-    sessionStorage.setItem("lastname", selectedOption);
-
+  location.href = "db.html"; // go to another page
+  var selectedOption = document.getElementById("options").value;
+  sessionStorage.setItem("lastname", selectedOption);
 }
-
