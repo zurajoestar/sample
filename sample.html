@@ -3,8 +3,9 @@
   <head>
     <title>Home</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDuQ-4fLIUmqCJA59anC4TQoNyCDWaSf2Y"></script>
   </head>
-  <body>
+  <body onload="createMap();">
     <header>
       <div class="logo">
         <a href="sample.html">
@@ -26,6 +27,7 @@
       <img class="mySlides" src="img/2.png">
       <img class="mySlides" src="img/3.png">
       -->
+      <div id="map"></div>
       <div class="dropdown">
         <select id="options">
           <option disabled selected value="">Select a location....</option>

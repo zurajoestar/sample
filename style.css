@@ -195,3 +195,13 @@ p {
 .col-auto {
     padding-left: 20px;
 }
+
+/************************************** map **************************************/
+#map {
+  width: 700px;
+  height: 250px;
+  border: thin solid black;
+  margin: 0 auto;
+  margin-top: 50px;
+  justify-content: center;
+  }
