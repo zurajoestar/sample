@@ -17,7 +17,8 @@ function carousel() {
 // for passing selected option to another page
 function displaySelectedOption() {
   location.href = "db.html"; // go to another page
-  var selectedOption = document.getElementById("options").value;
+  // var selectedOption = document.getElementById("options").value;
+  selectedOption = "Crowfoot North - 2202 Crowfoot Parade Parking, 2202 Crowfoot Parade, Calgary, AB T2N 1N4"
   sessionStorage.setItem("lastname", selectedOption);
 }
 
