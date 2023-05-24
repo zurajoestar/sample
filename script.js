@@ -33,4 +33,8 @@ function createMap(){
     map: map,
     title: 'Crowfoot'
   });
+
+    trexMarker.addListener("click", () => {
+        displaySelectedOption();
+      });
 }
