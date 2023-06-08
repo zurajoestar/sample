@@ -6,46 +6,36 @@
 }
 
 
-/************************************** fonts **************************************/
-
-body {
-  font-family: 'Lato', sans-serif;
-  background-color: papayawhip;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: Georgia, serif;
-}
-
-.dropdown, .dropdown select, .dropdown button {
-  font-family: Verdana, sans-serif;
-}
-
-/************************************** header **************************************/
+/****************************************************** header and content ********************************************/
 header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #000;
+    background: rgba(255, 255, 255, 0); /* Transparent background for the header */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    z-index: 1; /* higher z-index to keep the header on top of other elements */
 }
 
-/************************************** logo **************************************/
+
 .logo img {
   max-height: 70px;
-  margin-left: 14px;
+  margin-left: 50px;
 }
 
-
-/************************************** navigation links **************************************/
+/************************************** navigation links **************************************************************/
 nav {
   margin-left: auto;
-
   margin-top: 15px;
 }
 
 nav ul {
   display: flex;
   list-style: none;
+  height: 100%;
 }
 
 nav li {
@@ -53,20 +43,70 @@ nav li {
 }
 
 nav a {
-  font-size: 30px;
-  font-size: 2vw;
+  font-size: 1.2vw;
   padding: 0 20px;
   padding: 0 2vw;
   font-weight: 80;
   color: #fff;
   text-decoration: none;
+  display: flex;
+  align-items: center; /* Center the text vertically */
+  transition: background-color 0.3s; /* smooth transition effect */
+  position: relative;
 }
 
-nav a.active /* for highlighting the current nav header */ {
-  color: red;
+nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 2px;
+  background-color: transparent; /* Set the initial underline color */
+  transition: background-color 0.3s; /* Adding smooth transition effect */
 }
 
-/************************************** dropdown **************************************/
+nav a:hover {
+  color: blue;
+}
+
+nav a:hover::after {
+  background-color: blue; /* underline color on hover */
+}
+
+nav a.active /* active link text color */ {
+  color: black;
+}
+
+nav a.active::after {
+  background-color: black; /* underline color for the active link */
+}
+
+/************************************** content ***********************************************************************/
+
+.content-for-index {
+    background-image: url('img/bg.jpg');
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: center top;
+    height: 600px;
+}
+
+.content {
+    padding-top: 100px;
+}
+/************************************** map and text beside it ********************************************************/
+#map {
+  width: 600px;
+  height: 800px;
+  border: thin solid black;
+  margin: 300px  0 0 100px; /* Center horizontally and set margin-top to 300px */
+}
+
+
+
+
+/************************************** dropdown **********************************************************************/
 
 .dropdown {
   display: flex;
@@ -74,6 +114,7 @@ nav a.active /* for highlighting the current nav header */ {
   margin: 0 auto;
   color: #000;
   width: 500px;
+  padding-top: 300px;
 }
 
 
@@ -82,10 +123,11 @@ nav a.active /* for highlighting the current nav header */ {
   padding: 8px;
   border: 1px solid black;
   border-radius: 4px;
-  background-color: #fff;
+  background-color: transparent;
   color: #555;
   margin-right: 10px;
   width: 100%;
+  background: white;
 }
 
 .dropdown button {
@@ -99,30 +141,10 @@ nav a.active /* for highlighting the current nav header */ {
 }
 
 
-/************************************** slideshow **************************************/
-.mySlides {
-  filter: brightness(80%) saturate(120%) hue-rotate(-20deg) sepia(30%) blur(1px);
-  width: 100%;
-  height: 400px;
-  object-fit: cover;
-  animation-name: fade;
-  animation-duration: 1s;
-}
 
-@keyframes fade {
-  from {
-    opacity: .8;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-
-/************************************** footer **************************************/
+/************************************** footer ************************************************************************/
 
 footer {
-  margin-top: 100px;  /* fixed space between main content and footer */
   position: relative;
   bottom: 0;
   left: 0;
@@ -133,7 +155,7 @@ footer {
   text-align: center;
 }
 
-/************************************** About Us **************************************/
+/************************************** About Us **********************************************************************/
 .text-container {
   max-width: 70%;
   margin: 0 auto;
@@ -176,7 +198,7 @@ footer {
 }
 
 
-/************************************** Future Lot Page **************************************/
+/************************************** Future Lot Page ***************************************************************/
 
 .station {
     padding-left: 25rem;
@@ -199,14 +221,4 @@ p {
     padding-left: 20px;
 }
 
-/************************************** map **************************************/
-#map {
-  width: 700px;
-  height: 250px;
-  border: thin solid black;
-  margin: 0 auto;
-  margin-top: 50px;
-  margin-bottom: 50px;
-  justify-content: center;
-  }
 
